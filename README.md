@@ -1,8 +1,11 @@
-# Georeferenced Zoning Map of Avon, CT (1954)
+# Georeferenced Zoning Maps for metro Hartford CT, 1950s
 
 This repository contains a georeferenced TIFF and a GeoJSON of Avon's 1954 Zoning Map with surrounding towns: Simsbury, Bloomfield, West Hartford, and Farmington (Canton and Burlington - both partially present - are not zoned).
 
 ![Resulting GeoJSON](./avon-zoning-illustration.jpg)
+
+## Source
+Avon and Joseph Moschner, “Present Zoning Fact Sheet [Map]” (Avon Town Planning Committee, Connecticut, January 1954), https://www.avonct.gov/planning-community-development/files/1956-pocd-maps-908.
 
 ## Georeferencing
 The original JPG map was georeferenced using [QGIS Georeferencer](https://docs.qgis.org/3.16/en/docs/user_manual/working_with_raster/georeferencer.html) tool. About 20 ground control points were chosen (available in `georeference/1954-avon-present-zoning-ROTATED_modified.tif.points`). The output GeoTIFF is available from `georeference/1954-avon-present-zoning-ROTATED_modified.tif`.
