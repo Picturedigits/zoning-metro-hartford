@@ -18,6 +18,21 @@ Avon and Joseph Moschner, “Present Zoning Fact Sheet [Map]” (Avon Town Plann
 - West Hartford CT 1958 — 3784 .W51 22.8 18
 - Windsor CT 1961 — 3784 .W8 10.244 12 1961 .D7
 
+## Minimum Land Required Per Family by Town Zoning in early 1950s
+
+| Town (section)         | Square Ft | Acres |
+|------------------------|-----------|-------|
+| Avon (east)            | 87,000    | 2.0   |
+| Avon (west)            | 30,000    | 0.7   |
+| Farmington (northeast) | 40,000    | 0.9   |
+| Farmington (west)      | 20,000    | 0.5   |
+| Bloomfield (west)      | 30,000    | 0.7   |
+| Simsbury               | 25,000    | 0.6   |
+| West Hartford (west)   | 10,000    | 0.2   |
+| Canton                 | no zoning | n/a   |
+
+Sources: Zoning Regulations for Avon (amended Oct 19, 1951, and Fall 1953); Bloomfield (adopted March 15, 1950); Simsbury (adopted Nov 21, 1952); West Hartford (amended to Dec 3, 1951); Farmington (adopted April 27, 1950), adapted from Avon and Joseph Moschner, “Present Zoning Fact Sheet [Map]” (Avon Town Planning Committee, Connecticut, January 1954), https://www.avonct.gov/planning-community-development/files/1956-pocd-maps-908.
+
 ## Georeferencing
 The original JPG map was georeferenced using [QGIS Georeferencer](https://docs.qgis.org/3.16/en/docs/user_manual/working_with_raster/georeferencer.html) tool. About 20 ground control points were chosen (available in `georeference/1954-avon-present-zoning-ROTATED_modified.tif.points`). The output GeoTIFF is available from `georeference/1954-avon-present-zoning-ROTATED_modified.tif`.
 
