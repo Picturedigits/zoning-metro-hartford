@@ -4,19 +4,42 @@ This repository contains a georeferenced TIFF and a GeoJSON of Avon's 1954 Zonin
 
 ![Resulting GeoJSON](./avon-zoning-illustration.jpg)
 
-## Source
-Avon and Joseph Moschner, “Present Zoning Fact Sheet [Map]” (Avon Town Planning Committee, Connecticut, January 1954), https://www.avonct.gov/planning-community-development/files/1956-pocd-maps-908.
+## Map Summary
+Avon 1954
+Bloomfield 1958
+Farmington 1961 (or earlier on 1954 Avon map)
+Glastonbury 1959 (or get 1956 at CSLib)
+Granby 1960
+Hartford 1962 (or get 1956 at CSLib or UConn)
+Newington 1954 (wait for 1957 from PSU)
+Simsbury 1958 (or earlier on 1954 Avon map, or 1957 CSLib map)
+West Hartford 1958
+Windsor 1961
 
-## Requested Zoning Maps from University of Kansas map library
-- Bloomfield CT 1958 — 3784 .B62 9 275
-- Farmington CT 1961 — 3784 .F22 22.8 23
-- Glastonbury CT 1959 — FC 3784 .G46 22.8 45
-- Granby CT 1960 — 3784 .G76 22.8 24
-- Hartford CT 1962 — 3784 .H25 22.8 12
-- Newington CT 1954 — 3784 .N46 22.8 12
-- Simsbury CT 1958 — 3784 .Si5 22.8 20
-- West Hartford CT 1958 — 3784 .W51 22.8 18
-- Windsor CT 1961 — 3784 .W8 10.244 12 1961 .D7
+## Historical subfolder
+- Avon, “Present Zoning Fact Sheet [Map]” (Joseph Moschner and Avon Town Planning Committee, Connecticut, January 1954), https://www.avonct.gov/planning-community-development/files/1956-pocd-maps-908, scanned by Town of Avon.
+
+- Bloomfield, “Zoning Map of the Town of Bloomfield, Connecticut” (Town Plan and Zoning Commission, June 30, 1958), http://www.worldcat.org/oclc/435838841, scanned by University of Kansas map library.
+
+- Farmington, “Zoning Map: Farmington, Connecticut” (Town Planning Dept, 1961), http://www.worldcat.org/oclc/435838863, scanned by University of Kansas map library.
+
+- Glastonbury, “Building-Zoning Map, Glastonbury, Connecticut,” June 1959, http://www.worldcat.org/oclc/435838832, scanned by University of Kansas map library.
+
+- Granby, “Zoning Map of Granby, Connecticut.” (Technical Planning Associates, 1960), http://www.worldcat.org/oclc/435838864, scanned by University of Kansas map library.
+
+- Hartford, “Zoning Map of the City of Hartford [Connecticut]” (City of Hartford. Department of Engineering, June 1, 1962), http://www.worldcat.org/oclc/435838873, scanned by University of Kansas map library.
+
+- Newington, “Zone Map: Town of Newington, Connecticut” (Zoning Commission, June 21, 1962), http://www.worldcat.org/oclc/435841790, scanned by University of Kansas map library.
+
+- Simsbury, “Simsbury [Zoning Map] Connecticut,” October 30, 1958, http://www.worldcat.org/oclc/435835109, scanned by University of Kansas map library.
+
+- West Hartford, “Zoning Map: West Hartford, Connecticut” (Town Plan and Planning Commission, December 1958), http://www.worldcat.org/oclc/435841829, scanned by University of Kansas map library.
+
+- Windsor, “Zoning Map: Town of Windsor, Connecticut” (Dr. Joseph R. Moschner & Associates, November 8, 1961), http://www.worldcat.org/oclc/190825516, scanned by University of Kansas map library.
+
+### Requested from Penn State map library
+Newington, “Zone Map: Town of Newington Connecticut” (Town of Newington, 1957), http://www.worldcat.org/oclc/61219552.
+
 
 ## Minimum Land Required Per Family by Town Zoning in early 1950s
 
