@@ -1,0 +1,20 @@
+﻿Town,Year,Source,R87,R80,R60,R40,R30,R25,R20,R18,R15,R12,R10,R9,R7,R6,R3,R1,Notes
+Avon,1954,Github,x,,,,x,,,,,,,,,,,,
+Bloomfield,1954,Avon map,,,,,x,,x,,x,,x,,,,,,
+Bloomfield,1958,GitHub,,,,x,x,,x,,x,,x,,,,,,see RB-20 res-biz
+Farmington,1954,Avon map,,,,x,,,x,,,x,,x,,,,,see R9 multi-fam reqs
+Farmington,1961,GitHub,,x,,x,x,,x,,,x,,x,,,,,see also RA (1 acre)
+Glastonbury,1956,at CSLib,,,,,,,,,,,,,,,,,
+Glastonbury,1959,Github,,,,,,,,,,,,,,,,,"AA, A, B, Rural not defined on map"
+Granby,1960,Github,,,,,,,,,,,,,,,,,"1957 zones; amended 1960: RU, RR, RA undefined on map"
+Hartford,1956,at CSLib,,,,,,,,,,,,,,,,,
+Hartford,1962,GitHub,,,,,,,,,,,,,,,,,"A1-2-3, B-2, C1-2 not defined on map"
+Newington,1957,PSU,,,,,,,,,,,,,,,,,
+Newington,1962,GitHub,,,,,,,x,,,,x,,x,,,,also R-GA residence
+Simsbury,1954,Avon map,,,,,,x,,,x,,,x,,,,,
+Simsbury,1957,at CSLib,,,,,,,,,,,,,,,,,
+Simsbury,1958,GitHub,,,,x,x,x,,,x,,,,,,,,B residence undefined on map; A1-15 vs A15 unclear on map
+West Hartford,1954,Avon map,,,,,,,,x,,,x,x,,x,x,x,
+West Hartford,1958,Github,,,,,,,,,,,,,,,,,"AAA, AA, A, B, C, D, G not defined on map"
+Windsor,1961,Github,,,,,x,,x,,,x,x,,x,,,,"plus also A, B1-2 and other details"
+NOTE,,,,,,,,,,,,,,,,,,,"Equivalent (1 acre = 43,560 sq ft)"
