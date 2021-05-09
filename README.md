@@ -1,20 +1,18 @@
 # Georeferenced Zoning Maps for metro Hartford CT, 1950s
 
-This repository contains a georeferenced TIFF and a GeoJSON of Avon's 1954 Zoning Map with surrounding towns: Simsbury, Bloomfield, West Hartford, and Farmington (Canton and Burlington - both partially present - are not zoned).
-
-![Resulting GeoJSON](./avon-zoning-illustration.jpg)
+![Resulting GeoJSON](./avon-zoning-1954-illustration.jpg)
 
 ## Map Summary
-Avon 1954
-Bloomfield 1958
-Farmington 1961 (or earlier on 1954 Avon map)
-Glastonbury 1959 (or get 1956 at CSLib)
-Granby 1960
-Hartford 1962 (or get 1956 at CSLib or UConn)
-Newington 1954 (wait for 1957 from PSU)
-Simsbury 1958 (or earlier on 1954 Avon map, or 1957 CSLib map)
-West Hartford 1958
-Windsor 1961
+* Avon 1954 (georeferenced & in GeoJSON)
+* Bloomfield 1958 (georeferenced & in GeoJSON)
+* Farmington 1961 (or earlier on 1954 Avon map; PDF only)
+* Glastonbury 1959 (or get 1956 at CSLib; PDF only)
+* Granby 1960 (PDF only)
+* Hartford 1962 (or get 1956 at CSLib or UConn; PDF only)
+* Newington 1954 (wait for 1957 from PSU)
+* Simsbury 1958 (or earlier on 1954 Avon map, or 1957 CSLib map; PDF only)
+* West Hartford 1958 (PDF only)
+* Windsor 1961 (PDF only)
 
 ## Historical subfolder
 - Avon, “Present Zoning Fact Sheet [Map]” (Joseph Moschner and Avon Town Planning Committee, Connecticut, January 1954), https://www.avonct.gov/planning-community-development/files/1956-pocd-maps-908, scanned by Town of Avon.
@@ -57,18 +55,20 @@ Newington, “Zone Map: Town of Newington Connecticut” (Town of Newington, 195
 
 Sources: Zoning Regulations for Avon (amended Oct 19, 1951, and Fall 1953); Bloomfield (adopted March 15, 1950); Simsbury (adopted Nov 21, 1952); West Hartford (amended to Dec 3, 1951); Farmington (adopted April 27, 1950), adapted from Avon and Joseph Moschner, “Present Zoning Fact Sheet [Map]” (Avon Town Planning Committee, Connecticut, January 1954), https://www.avonct.gov/planning-community-development/files/1956-pocd-maps-908.
 
-## Georeferencing
-The original JPG map was georeferenced using [QGIS Georeferencer](https://docs.qgis.org/3.16/en/docs/user_manual/working_with_raster/georeferencer.html) tool. About 20 ground control points were chosen (available in `georeference/1954-avon-present-zoning-ROTATED_modified.tif.points`). The output GeoTIFF is available from `georeference/1954-avon-present-zoning-ROTATED_modified.tif`.
+## Georeferencing (Avon 1954)
+Export PDF to JPG or PNG, and georeference the image using [QGIS Georeferencer](https://docs.qgis.org/3.16/en/docs/user_manual/working_with_raster/georeferencer.html) tool.
+
+For Avon 1954, about 20 ground control points were chosen (available in `georeference/1954-avon-present-zoning-ROTATED_modified.tif.points`). The output GeoTIFF is available from `georeference/1954-avon-present-zoning-ROTATED_modified.tif`.
 
 To recreate GeoTIFF from the original JPG and GCP points in QGIS, follow the steps below:
 
 1. Open the JPG map in Georeferencer.
 1. Load GCP points file.
 1. In Transformation Settings, set type to *Polynomial 2*, resampling method to *Nearest neighbor*, and target SRS to *EPSG:3857* (Web Mercator).
-1. Hit the *Play* button to generate a GeoTIFF.
+1. Hit *Play* to generate a GeoTIFF.
 
 ## Creating a GeoJSON
-A GeoJSON file with polygons was manually created in QGIS using the georeferenced map and simplified town boundaries of Connecticut (available from `georeference/ct-towns.geojson`).
+The GeoJSONs were created using georeferenced TIFF maps. Polygons were manually created in QGIS, sometimes using simplified town boundaries of Connecticut (available from `georeference/ct-towns.geojson`).
 
 Each polygon contains three properties:
 * town
