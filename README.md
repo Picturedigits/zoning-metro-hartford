@@ -103,10 +103,28 @@ See additional West Hartford zoning maps in https://github.com/ontheline/otl-zon
 
 Sources: Avon Zoning Regulations (amended Oct 19, 1951, and Fall 1953); Bloomfield (adopted March 15, 1950); West Hartford (amended to Dec 3, 1951); adapted from Avon “Present Zoning Fact Sheet [Map]” (Avon Town Planning Committee and Joseph Moschner, Connecticut, January 1954), https://www.avonct.gov/planning-community-development/files/1956-pocd-maps-908; see also Bloomfield 1958 and West Hartford 1958 zoning map legends.
 
-## Calculations
+### What percentage of its total land area did each town zone by type in mid-1950s?
 
-- do calculations of amount and percentage of land allocated to residential type by town
-- decide if calculations should manually remove park area (such as Pennfield state park in Bloomfield) or keep as-is on zone map
+Percentage of Land Area by Zone Type and Town, mid-1950s
+
+| Zone equivalent | Avon | Bloomfield | West Hartford |
+|-|-|-|-|
+| R-87 | 26% |  |  |
+| R-40 |  | 32% |  |
+| R-30 | 72% | 27% |  |
+| R-20 |  | 14% |  |
+| R-18 |  |  | 31% |
+| R-15 |  | 10% |  |
+| R-10.5 |  |  | 19% |
+| R-10 |  | 5% |  |
+| R-9 |  |  | 24% |
+| R-6 |  |  | 11% |
+| R-3 |  |  | 6% |
+| R-1 |  |  | 2% |
+| non-residential | 2% | 12% | 7% |
+| Total acres | 14979 | 16943 | 14333 |
+
+Note that a strict calculation might manually remove park areas (such as Pennfield state park in Bloomfield) from residential zone calculations, but towns did include them in zoning maps, so left as-is.
 
 ## Georeferencing
 Export PDF to JPG or PNG, and georeference the image using [QGIS Georeferencer](https://docs.qgis.org/3.16/en/docs/user_manual/working_with_raster/georeferencer.html) tool.
