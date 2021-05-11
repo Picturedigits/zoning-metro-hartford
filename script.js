@@ -56,29 +56,32 @@ map.attributionControl.setPrefix('View\
 L.control.scale().addTo(map);
 
 // https://colorbrewer2.org/#type=sequential&scheme=YlGn&n=5
-// TODO -- use correct syntax for numeric data and ranges, similar to this:
-// return d > 87000 ? '#006d2c' :
-//        d > 40000 ? '#31a354' :
-//        d > 30000 ? '#74c476' :
-//        d > 15000 ? '#bae4b3' :
-//        d > 9000 ? '#edf8e9' :
-//                  'gray' ;
-
 var choroplethStyle = function(f) {
-  var area2color = {
-    '87000': '#006837', // dark green
-    '40000': '#31a354', //
-    '30000': '#78c679', //
-    '20000': '#c2e699', //
-    '15000': '#ffffcc', // light yellow-green
-    '10000': '#ffffe6' // yellow (TODO replace later)
-  }
+  var d = parseInt(f.properties.minlandfam);
 
+  var color = d > 87000 ? '#006d2c' :
+           d > 40000 ? '#31a354' :
+           d > 30000 ? '#74c476' :
+           d > 15000 ? '#bae4b3' :
+           d > 9000 ? '#edf8e9' :
+                     'gray' ;
   return {
     'color': 'black',
     'weight': 0.5,
-    'fillColor': area2color[ f.properties.minlandfam ] || 'gray', // gray if no data
+    'fillColor': color,
     'fillOpacity': choroplethOpacity
+  }
+}
+
+var addTownBounds = function (){
+  $.getJSON("geojson/ct-towns-selected.geojson", function (data) {
+    choroplethLayer = L.geoJson(data, {
+      style: {
+        'fillOpacity': 0,
+        'color': 'black'
+      },
+      interactive: false,
+    }).addTo(map);
   }
 }
 
@@ -86,7 +89,6 @@ var choroplethStyle = function(f) {
 $.getJSON("geojson/combined-zoning-1950s.geojson", function (data) {
   choroplethLayer = L.geoJson(data, {
     style: choroplethStyle,
-
     // Add tooltips
     onEachFeature: function(feature, layer) {
       var text = '<b>' + feature.properties.town + '</b><br>Zone: '
@@ -96,7 +98,8 @@ $.getJSON("geojson/combined-zoning-1950s.geojson", function (data) {
     }
   }).addTo(map);
 
-  map.fitBounds(choroplethLayer.getBounds())
+  map.fitBounds(choroplethLayer.getBounds());
+  addTownBounds();
 });
 
 // zoning points with colored numeric markers; see also style.css
