@@ -81,6 +81,8 @@ See additional West Hartford zoning maps in https://github.com/ontheline/otl-zon
 
 - Hartford, “Zoning Map of the City of Hartford [Connecticut]” (City of Hartford. Department of Engineering, June 1, 1962), http://www.worldcat.org/oclc/435838873, scanned by University of Kansas map library.
 
+- Newington, “Zone Map: Town of Newington Connecticut” (Town of Newington, 1957), http://www.worldcat.org/oclc/61219552, scanned by Penn State University map library.
+
 - Newington, “Zone Map: Town of Newington, Connecticut” (Zoning Commission, June 21, 1962), http://www.worldcat.org/oclc/435841790, scanned by University of Kansas map library.
 
 - Simsbury, “Simsbury [Zoning Map] Connecticut,” October 30, 1958, http://www.worldcat.org/oclc/435835109, scanned by University of Kansas map library.
@@ -89,25 +91,26 @@ See additional West Hartford zoning maps in https://github.com/ontheline/otl-zon
 
 - Windsor, “Zoning Map: Town of Windsor, Connecticut” (Dr. Joseph R. Moschner & Associates, November 8, 1961), http://www.worldcat.org/oclc/190825516, scanned by University of Kansas map library.
 
-### Requested from Penn State map library
-Newington, “Zone Map: Town of Newington Connecticut” (Town of Newington, 1957), http://www.worldcat.org/oclc/61219552.
+## Minimum Land Required Per Family by Town Zoning, mid-1950s
 
+| Town  | Zone | Square Ft |
+|:------|-----:|----------:|
+| Avon | East | 87,120 |
+| Avon | West | 30,000 |
+| Bloomfield | R 40 | 40,000 |
+| Bloomfield | R 30 | 30,000 |
+| Bloomfield | R 20 | 20,000 |
+| Bloomfield | R 15 | 15,000 |
+| Bloomfield | R 10 | 10,000 |
+| West Hartford | AAA | 18,000 |
+| West Hartford | AA | 10,500 |
+| West Hartford | A | 9,000 |
+| West Hartford | B | 6,000 |
+| West Hartford | C | 3,000 |
+| West Hartford | D | 1,000 |
+| West Hartford | G | 3,000 |
 
-## Minimum Land Required Per Family by Town Zoning in early 1950s
-
-| Town (section)         | Square Ft | Acres |
-|:-----------------------|----------:|------:|
-| Avon (east)            | 87,000    | 2.0   |
-| Avon (west)            | 30,000    | 0.7   |
-| Farmington (northeast) | 40,000    | 0.9   |
-| Farmington (west)      | 20,000    | 0.5   |
-| Bloomfield (west)      | 30,000    | 0.7   |
-| Simsbury               | 25,000    | 0.6   |
-| West Hartford (west)   | 10,000    | 0.2   |
-| Burlington             | not zoned | n/a   |
-| Canton                 | not zoned | n/a   |
-
-Sources: Zoning Regulations for Avon (amended Oct 19, 1951, and Fall 1953); Bloomfield (adopted March 15, 1950); Simsbury (adopted Nov 21, 1952); West Hartford (amended to Dec 3, 1951); Farmington (adopted April 27, 1950), adapted from Avon and Joseph Moschner, “Present Zoning Fact Sheet [Map]” (Avon Town Planning Committee, Connecticut, January 1954), https://www.avonct.gov/planning-community-development/files/1956-pocd-maps-908.
+Sources: Avon Zoning Regulations (amended Oct 19, 1951, and Fall 1953); Bloomfield (adopted March 15, 1950); West Hartford (amended to Dec 3, 1951); adapted from Avon “Present Zoning Fact Sheet [Map]” (Avon Town Planning Committee and Joseph Moschner, Connecticut, January 1954), https://www.avonct.gov/planning-community-development/files/1956-pocd-maps-908.
 
 ## Georeferencing (Avon 1954)
 Export PDF to JPG or PNG, and georeference the image using [QGIS Georeferencer](https://docs.qgis.org/3.16/en/docs/user_manual/working_with_raster/georeferencer.html) tool.
