@@ -75,14 +75,15 @@ var choroplethStyle = function(f) {
 
 var addTownBounds = function (){
   $.getJSON("geojson/ct-towns-selected.geojson", function (data) {
-    choroplethLayer = L.geoJson(data, {
+    L.geoJson(data, {
       style: {
-        'fillOpacity': 0,
-        'color': 'black'
+        fillOpacity: 0,
+        color: 'black',
+        weight: 2,
       },
       interactive: false,
     }).addTo(map);
-  }
+  })
 }
 
 // zoning polygons with fillColor
