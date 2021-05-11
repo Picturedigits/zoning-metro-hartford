@@ -55,16 +55,22 @@ map.attributionControl.setPrefix('View\
 
 L.control.scale().addTo(map);
 
-// https://colorbrewer2.org/#type=sequential&scheme=YlGn&n=5
+// https://colorbrewer2.org/#type=sequential&scheme=YlGn&n=9
+// remove color at bottom, to roughly match scale otl-zoning-west-hartford
+
+
 var choroplethStyle = function(f) {
   var d = parseInt(f.properties.minlandfam);
 
-  var color = d > 87000 ? '#006d2c' :
-           d > 40000 ? '#31a354' :
-           d > 30000 ? '#74c476' :
-           d > 15000 ? '#bae4b3' :
-           d > 9000 ? '#edf8e9' :
-                     'gray' ;
+  var color = d > 87000 ? '#004529' : // dark green
+           d >= 40000 ? '#006837' :
+           d >= 30000 ? '#238443' :
+           d >= 18000 ? '#41ab5d' :
+           d >= 9000 ? '#78c679' : // match A in otl-zoning-west-hartford
+           d >= 6000 ? '#addd8e' : // match B
+           d >= 3000 ? '#d9f0ad' : // match C
+           d >= 1000 ? '#f7fcb9' : // light yellow
+                     '#cccccc' ; // other
   return {
     'color': 'black',
     'weight': 0.5,
@@ -130,7 +136,7 @@ var opacity = L.control({position: 'topright'});
 opacity.onAdd = function (map) {
   var div = L.DomUtil.create('div', 'control-custom range');
   div.innerHTML = '<h4>Opacity: 1950s zones</h4>';
-  div.innerHTML += '<input id="rangeSlider" type="range" min="0" max="100" value="70">';
+  div.innerHTML += '<input id="rangeSlider" type="range" min="0" max="100" value="100">';
 
   // Make sure the map doesn't move with slider change
   L.DomEvent.disableClickPropagation(div);
