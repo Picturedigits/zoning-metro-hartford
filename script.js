@@ -76,7 +76,7 @@ var choroplethStyle = function(f) {
 
   return {
     'color': 'black',
-    'weight': 1,
+    'weight': 0.5,
     'fillColor': area2color[ f.properties.minlandfam ] || 'gray', // gray if no data
     'fillOpacity': choroplethOpacity
   }
@@ -85,7 +85,15 @@ var choroplethStyle = function(f) {
 // zoning polygons with fillColor
 $.getJSON("geojson/combined-zoning-1950s.geojson", function (data) {
   choroplethLayer = L.geoJson(data, {
-    style: choroplethStyle
+    style: choroplethStyle,
+
+    // Add tooltips
+    onEachFeature: function(feature, layer) {
+      var text = '<b>' + feature.properties.town + '</b><br>Zone: '
+        + feature.properties.zone + '<br>Year: ' + feature.properties.year;
+
+      layer.bindTooltip(text, { sticky: true });
+    }
   }).addTo(map);
 
   map.fitBounds(choroplethLayer.getBounds())

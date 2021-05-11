@@ -5,7 +5,7 @@ Interactive map displays `combined-zoning-1950s.geojson`, a simplified combined 
 
 - `avon-zoning-1953.geojson` to display residential zoning in Avon 1953 (Fall) from the regional map labeled `avon-area-zoning-1954.geojson` (published in January 1954). According to map legend, Avon (east) minimum land per family is 2 acres (about 87,000 sq ft), and Avon (west) is 30,000 sq ft. We chose not to display Farmington 1950 and Simsbury 1952 data from the `avon-area` file because these were partial maps, and the Avon data legend did not clearly define minimum land per family requirements for every residential zoning unit in these towns. Also, we replace the Bloomfield 1950 partial data and West Hartford 1951 partial data from this area map with more complete data from 1958 town maps below.
 - `bloomfield-zoning-1958.geojson` to display residential zoning in Bloomfield 1958. Note that R-40 is coded at 40,000 sq ft of minimum land per family, etc. RB-20 is both residential and business, and coded as 20,000 sq ft in this residential map.
-- **to come** `west-hartford-zoning-1958.geojson` to display residential zoning in West Hartford 1958. **TODO** code AAA, etc...
+- `west-hartford-zoning-1958.geojson` to display residential zoning in West Hartford 1958. **TODO** code AAA, etc...
 - For all three geojson files, non-residential zones (industrial and business-only) and non-zoned areas are coded as "na" and are not displayed in this residential zoning interactive map.
 - Note that zoning areas as residential at one point in time does not necessarily mean that homes will be constructed there, and some areas may be rezoned to industrial/business or other uses in the future.
 
@@ -27,10 +27,8 @@ See also https://ontheline.github.io/otl-zoning-west-hartford/index-caption.html
 
 
 ## TODO
-- display the map! I think I'm doing something wrong with `choroplethStyle` or `choroplethLayer`, perhaps because `minlandfam` is numeric and I'm using syntax for string variables?
 - finalize color scheme that also works well with 1924 WH map and diagram
 - design new legend to match data
-- add onEachFeature to display town,zone,year of each polygon when clicked or on hover?
 - decide if Town Boundaries (including Hartford and others) should appear on this map
 - decide if Star should appear for State Capitol
 - decide if FA and Extramarkers can be removed from this map, since replaced by onEachFeature
@@ -40,9 +38,9 @@ See also https://ontheline.github.io/otl-zoning-west-hartford/index-caption.html
 
 ## Map Summary
 * Avon 1951 (JPG only)
-* Avon area 1954 (georeferenced & in GeoJSON)
+* Avon area 1954 (PDF, GeoTIFF, GeoJSON)
 * Avon 1964 (JPG only)
-* Bloomfield 1958 (georeferenced & in GeoJSON)
+* Bloomfield 1958 (PDF, GeoTIFF, GeoJSON)
 * Farmington 1961 (PDF only) - see earlier on 1954 Avon map
 * Glastonbury 1959 (PDF only) - see 1956 at CSLib; PDF only)
 * Granby 1960 (PDF only)
@@ -50,7 +48,7 @@ See also https://ontheline.github.io/otl-zoning-west-hartford/index-caption.html
 * Hartford 1962 (PDF only) - see 1956 at CSLib or UConn
 * Newington 1954 (PDF only) - see 1957 from PSU
 * Simsbury 1958 (PDF only) - see earlier on 1954 Avon map, or 1957 CSLib map
-* West Hartford 1958 (PDF only)
+* West Hartford 1958 (PDF, GeoTIFF, GeoJSON)
 * Windsor 1961 (PDF only)
 
 See additional West Hartford zoning maps in https://github.com/ontheline/otl-zoning-west-hartford
