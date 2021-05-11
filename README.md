@@ -4,10 +4,10 @@ Interactive Map: Exclusionary Zoning in Metro Hartford CT, mid-1950s; focusing o
 ## Live map
 https://ontheline.github.io/otl-zoning-metro-hartford/index-caption.html
 
+See related repo: https://github.com/ontheline/otl-zoning-west-hartford
+
 ## Credits
 Interactive map developed by Jack Dougherty and Ilya Ilyankou / Picturedigits for On The Line, http://OnTheLine.trincoll.edu, Trinity College, Hartford CT.
-
-See also https://ontheline.github.io/otl-zoning-west-hartford/index-caption.html
 
 ## Dependencies
 - Leaflet https://leafletjs.com
@@ -17,24 +17,15 @@ See also https://ontheline.github.io/otl-zoning-west-hartford/index-caption.html
 - Leaflet.ExtraMarkers https://github.com/coryasilva/Leaflet.ExtraMarkers
 
 ## Map design
-
 Interactive map displays `combined-zoning-1950s.geojson`, a simplified combined residential zoning map of "the mid-1950s" that merges selected data from three different maps, using a common unit of measurement (minimum land required per family, in square feet). This combined geojson is comprised of:
 
 - `avon-zoning-1953.geojson` to display residential zoning in Avon 1953 (Fall) from the regional map labeled `avon-area-zoning-1954.geojson` (published in January 1954). According to map legend, Avon (east) minimum land per family is 2 acres (about 87,000 sq ft), and Avon (west) is 30,000 sq ft. We chose not to display Farmington 1950 and Simsbury 1952 data from the `avon-area` file because these were partial maps, and the Avon data legend did not clearly define minimum land per family requirements for every residential zoning unit in these towns. Also, we replace the Bloomfield 1950 partial data and West Hartford 1951 partial data from this area map with more complete data from 1958 town maps below.
 - `bloomfield-zoning-1958.geojson` to display residential zoning in Bloomfield 1958. Note that R-40 is coded at 40,000 sq ft of minimum land per family, etc. RB-20 is both residential and business, and coded as 20,000 sq ft in this residential map.
-- `west-hartford-zoning-1958.geojson` to display residential zoning in West Hartford 1958. **TODO** code AAA, etc...
+- `west-hartford-zoning-1958.geojson` to display residential zoning in West Hartford 1958. Note that AAA is coded as R-18, etc.
 - For all three geojson files, non-residential zones (industrial and business-only) and non-zoned areas are coded as "na" and are not displayed in this residential zoning interactive map.
 - Note that zoning areas as residential at one point in time does not necessarily mean that homes will be constructed there, and some areas may be rezoned to industrial/business or other uses in the future.
 
 Legend created with https://www.figma.com/file/7JitgyYxiT3xR3fyoZttKb/otl-zoning-graphics
-
-## TODO
-- design new legend to match data
-- decide if Star should appear for State Capitol
-- decide if FA and Extramarkers can be removed from this map, since replaced by onEachFeature
-- do calculations of amount and percentage of land allocated to residential type by town
-- decide if calculations should manually remove park area (such as Pennfield state park in Bloomfield) or keep as-is on zone map
-
 
 ## Map Summary
 * Avon 1951 (JPG only)
@@ -112,7 +103,12 @@ See additional West Hartford zoning maps in https://github.com/ontheline/otl-zon
 
 Sources: Avon Zoning Regulations (amended Oct 19, 1951, and Fall 1953); Bloomfield (adopted March 15, 1950); West Hartford (amended to Dec 3, 1951); adapted from Avon “Present Zoning Fact Sheet [Map]” (Avon Town Planning Committee and Joseph Moschner, Connecticut, January 1954), https://www.avonct.gov/planning-community-development/files/1956-pocd-maps-908; see also Bloomfield 1958 and West Hartford 1958 zoning map legends.
 
-## Georeferencing (Avon 1954)
+## Calculations
+
+- do calculations of amount and percentage of land allocated to residential type by town
+- decide if calculations should manually remove park area (such as Pennfield state park in Bloomfield) or keep as-is on zone map
+
+## Georeferencing
 Export PDF to JPG or PNG, and georeference the image using [QGIS Georeferencer](https://docs.qgis.org/3.16/en/docs/user_manual/working_with_raster/georeferencer.html) tool.
 
 For Avon 1954, about 20 ground control points were chosen (available in `georeference/1954-avon-present-zoning-ROTATED_modified.tif.points`). The output GeoTIFF is available from `georeference/1954-avon-present-zoning-ROTATED_modified.tif`.

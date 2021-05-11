@@ -98,8 +98,10 @@ $.getJSON("geojson/combined-zoning-1950s.geojson", function (data) {
     style: choroplethStyle,
     // Add tooltips
     onEachFeature: function(feature, layer) {
-      var text = '<b>' + feature.properties.town + '</b><br>Zone: '
-        + feature.properties.zone + '<br>Year: ' + feature.properties.year;
+      var text = '<b>' + feature.properties.town
+        + '</b> ' + feature.properties.year
+        + '<br>Zone: ' + feature.properties.zone
+        + '<br>Min Land Per Fam (Sq Ft): ' + feature.properties.minlandfam;
 
       layer.bindTooltip(text, { sticky: true });
     }
@@ -109,34 +111,27 @@ $.getJSON("geojson/combined-zoning-1950s.geojson", function (data) {
   addTownBounds();
 });
 
-// zoning points with colored numeric markers; see also style.css
-// $.getJSON("geojson/wh-area-markers-1924-whitten.geojson", function (data){
-//   L.geoJson(data, {
-//     pointToLayer: function( feature, latlng) {
-//       var colors = {
-//         'A': 'black', // cannot easily use hex colors here
-//         'B': 'black', //
-//         'C': 'black', //
-//         'D': 'black', //
-//         'E': 'black' //
-//       }
-//       var mIcon = L.ExtraMarkers.icon({
-//         icon: 'fa-number',
-//         number: feature.properties.area,
-//         markerColor: colors[feature.properties.area]
-//       });
-//       var marker = L.marker(latlng, {icon: mIcon});
-//       return marker;
-//     }
-//   }).addTo(map);
-// });
+// zoning points with colored markers; see also style.css
+$.getJSON("geojson/zoning-markers.geojson", function (data){
+  L.geoJson(data, {
+    pointToLayer: function( feature, latlng) {
+      var mIcon = L.ExtraMarkers.icon({
+        icon: 'fa-number',
+        number: feature.properties.equivalent,
+        markerColor: 'black'
+      });
+      var marker = L.marker(latlng, {icon: mIcon});
+      return marker;
+    }
+  }).addTo(map);
+});
 
 // Add Opacity control
 var opacity = L.control({position: 'topright'});
 opacity.onAdd = function (map) {
   var div = L.DomUtil.create('div', 'control-custom range');
   div.innerHTML = '<h4>Opacity: 1950s zones</h4>';
-  div.innerHTML += '<input id="rangeSlider" type="range" min="0" max="100" value="100">';
+  div.innerHTML += '<input id="rangeSlider" type="range" min="0" max="100" value="90">';
 
   // Make sure the map doesn't move with slider change
   L.DomEvent.disableClickPropagation(div);
@@ -158,7 +153,7 @@ var legend = L.control({position: 'bottomright'});
 
 legend.onAdd = function(map) {
   var div = L.DomUtil.create('div', 'info legend');
-  div.innerHTML += '<img src="./1924-zoning-legend.png" alt="1924 Zoning Legend" width="110">';
+  div.innerHTML += '<img src="./1950s-zoning-legend.png" alt="1924 Zoning Legend" width="110">';
   return div;
 };
 
