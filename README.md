@@ -110,7 +110,7 @@ See additional West Hartford zoning maps in https://github.com/ontheline/otl-zon
 | West Hartford | D | 1,000 |
 | West Hartford | G | 3,000 |
 
-Sources: Avon Zoning Regulations (amended Oct 19, 1951, and Fall 1953); Bloomfield (adopted March 15, 1950); West Hartford (amended to Dec 3, 1951); adapted from Avon “Present Zoning Fact Sheet [Map]” (Avon Town Planning Committee and Joseph Moschner, Connecticut, January 1954), https://www.avonct.gov/planning-community-development/files/1956-pocd-maps-908.
+Sources: Avon Zoning Regulations (amended Oct 19, 1951, and Fall 1953); Bloomfield (adopted March 15, 1950); West Hartford (amended to Dec 3, 1951); adapted from Avon “Present Zoning Fact Sheet [Map]” (Avon Town Planning Committee and Joseph Moschner, Connecticut, January 1954), https://www.avonct.gov/planning-community-development/files/1956-pocd-maps-908; see also Bloomfield 1958 and West Hartford 1958 zoning map legends.
 
 ## Georeferencing (Avon 1954)
 Export PDF to JPG or PNG, and georeference the image using [QGIS Georeferencer](https://docs.qgis.org/3.16/en/docs/user_manual/working_with_raster/georeferencer.html) tool.
