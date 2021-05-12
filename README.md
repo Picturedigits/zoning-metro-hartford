@@ -101,7 +101,15 @@ See additional West Hartford zoning maps in https://github.com/ontheline/otl-zon
 | West Hartford | D | 1,000 |
 | West Hartford | G | 3,000 |
 
-Sources: Avon Zoning Regulations (amended Oct 19, 1951, and Fall 1953); Bloomfield (adopted March 15, 1950); West Hartford (amended to Dec 3, 1951); adapted from Avon “Present Zoning Fact Sheet [Map]” (Avon Town Planning Committee and Joseph Moschner, Connecticut, January 1954), https://www.avonct.gov/planning-community-development/files/1956-pocd-maps-908; see also Bloomfield 1958 and West Hartford 1958 zoning map legends.
+## Largest Requirements for Minimum Land Per Family and Home Size in Each Town
+
+| Town  | Year | Zone | Min Land Per Family (Sq Ft) | Min Land Width (Ft) | Min Floor Area for Home (Sq Ft) |
+|:------|-----:|-----:|----------:|----:|-----:|
+| Avon  | 1953 | East | 87,000    | 200 | na  |
+| Blmfd | 1958 | R-40 | 40,000    | 150 | ??? |
+| WeHa  | 1958 | AAA  | 18,000    | 100 | 1,715 |
+
+Sources: Avon Zoning Regulations (amended Oct 19, 1951, and Fall 1953); Bloomfield (adopted March 15, 1950); West Hartford (amended to Dec 3, 1951); adapted from Avon “Present Zoning Fact Sheet [Map]” (Avon Town Planning Committee and Joseph Moschner, Connecticut, January 1954), https://www.avonct.gov/planning-community-development/files/1956-pocd-maps-908; see also Bloomfield 1958 and West Hartford 1958 zoning map legends. Assume 1958 Bloomfield R-40 minimum lot width of 150 ft based on present-day requirements.
 
 ### What percentage of its total land area did each town zone by type in mid-1950s?
 
