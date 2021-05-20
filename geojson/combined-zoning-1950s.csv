@@ -1,21 +1,21 @@
 town,year,zone,minlandfam,acres
-Avon,1953,East,87000,3937.22518
-Avon,1953,Industrial,na,91.41126359
-Avon,1953,Business,na,106.7718514
-Avon,1953,Business,na,8.495686171
-Avon,1953,Business,na,10.86937521
-Avon,1953,Business,na,2.324628654
-Avon,1953,Business,na,2.343560229
-Avon,1953,Business,na,2.067437673
-Avon,1953,Industrial,na,22.29553881
-Avon,1953,Industrial,na,9.721562649
-Avon,1953,Business,na,2.333836028
-Avon,1953,Business,na,10.37393452
-Avon,1953,Industrial,na,36.16921937
-Avon,1953,Business,na,26.54813391
-Avon,1953,West,30000,10717.63528
-Avon,1953,Industrial,na,7.511266619
-Avon,1953,Business,na,4.009556446
+Avon,1953,East,87120,3918.3
+Avon,1953,Industrial,na,91.4
+Avon,1953,Business,na,106.8
+Avon,1953,Business,na,8.5
+Avon,1953,Business,na,10.9
+Avon,1953,Business,na,2.3
+Avon,1953,Business,na,2.3
+Avon,1953,Business,na,2.1
+Avon,1953,Industrial,na,22.3
+Avon,1953,Industrial,na,9.7
+Avon,1953,Business,na,2.3
+Avon,1953,Business,na,10.4
+Avon,1953,Industrial,na,36.2
+Avon,1953,Business,na,26.5
+Avon,1953,West,30000,10717.6
+Avon,1953,Industrial,na,7.5
+Avon,1953,Business,na,4
 Bloomfield,1958,R-10,10000,151.3
 Bloomfield,1958,Not Zoned,na,113.7
 Bloomfield,1958,Business 2,na,50.2
@@ -50,6 +50,80 @@ Bloomfield,1958,Not Zoned,na,8.3
 Bloomfield,1958,Not Zoned,na,15
 Bloomfield,1958,Business 2,na,44
 Bloomfield,1958,Not Zoned,na,2.2
-Bloomfield,1958,R-40,40000,4623.4
+Bloomfield,1958,R-40,40000,4615.9
 Bloomfield,1958,R-20,20000,1931
 Bloomfield,1958,R-40,40000,691.1
+West Hartford,1958,AAA,18000,530
+West Hartford,1958,Section 15 Business,na,5.4
+West Hartford,1958,AAA,18000,3875.4
+West Hartford,1958,B,6000,40
+West Hartford,1958,C,3000,46.2
+West Hartford,1958,Business 2,na,7.6
+West Hartford,1958,Business 2,na,33
+West Hartford,1958,Business 1,na,1.8
+West Hartford,1958,C,3000,15.5
+West Hartford,1958,Business 2,na,19
+West Hartford,1958,C,3000,9.2
+West Hartford,1958,C,3000,41.9
+West Hartford,1958,Business 2,na,4.6
+West Hartford,1958,C,3000,18.5
+West Hartford,1958,B,6000,204.4
+West Hartford,1958,Business 1,na,5.4
+West Hartford,1958,Business 1,na,17.2
+West Hartford,1958,Section 15 Business,na,10.8
+West Hartford,1958,Section 15 Business,na,19.5
+West Hartford,1958,AA,10500,114.4
+West Hartford,1958,Section 15 Business,na,62.3
+West Hartford,1958,Business 1,na,9
+West Hartford,1958,Section 15 Business,na,41.2
+West Hartford,1958,Business 2,na,1
+West Hartford,1958,B,6000,766.9
+West Hartford,1958,G,3000,6
+West Hartford,1958,C,3000,183.5
+West Hartford,1958,B,6000,5.5
+West Hartford,1958,B,6000,2
+West Hartford,1958,D,1000,0.8
+West Hartford,1958,B,6000,426.3
+West Hartford,1958,Business 2,na,3.7
+West Hartford,1958,Business 2,na,13.8
+West Hartford,1958,D-1,1000,145.9
+West Hartford,1958,C,3000,44.8
+West Hartford,1958,Industrial,na,36.6
+West Hartford,1958,Business 2,na,40.9
+West Hartford,1958,B,6000,32.3
+West Hartford,1958,Parking,na,0.7
+West Hartford,1958,Business 1,na,2.3
+West Hartford,1958,Business 1,na,5.1
+West Hartford,1958,C,3000,4
+West Hartford,1958,Business 2,na,6.6
+West Hartford,1958,C,3000,44
+West Hartford,1958,C,3000,2.9
+West Hartford,1958,D-1,1000,20.7
+West Hartford,1958,G,3000,28.3
+West Hartford,1958,Parking,na,2.1
+West Hartford,1958,Business 1,na,7.1
+West Hartford,1958,B,6000,33.8
+West Hartford,1958,G,3000,2.9
+West Hartford,1958,D-2,1000,4.5
+West Hartford,1958,D-1,1000,3.9
+West Hartford,1958,Business 2,na,55.2
+West Hartford,1958,D-1,1000,10.1
+West Hartford,1958,C,3000,34.1
+West Hartford,1958,D-1,1000,28.8
+West Hartford,1958,Business 2,na,2.4
+West Hartford,1958,D-1,1000,24.8
+West Hartford,1958,D-1,1000,11.2
+West Hartford,1958,B,6000,78.8
+West Hartford,1958,A,9000,19.5
+West Hartford,1958,C,3000,262.1
+West Hartford,1958,G,3000,8.4
+West Hartford,1958,Business 1,na,4.2
+West Hartford,1958,Industrial,na,552
+West Hartford,1958,Business 1,na,4.9
+West Hartford,1958,Business 2,na,1.8
+West Hartford,1958,Business 2,na,3.7
+West Hartford,1958,AA,10500,2672.7
+West Hartford,1958,A,9000,3477.1
+West Hartford,1958,C,3000,64.7
+West Hartford,1958,D-1,1000,0.6
+West Hartford,1958,Business 1,na,5

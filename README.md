@@ -1,22 +1,13 @@
 # olt-zoning-metro-hartford
 Interactive Map: Exclusionary Zoning in Metro Hartford CT, mid-1950s; focusing on Avon, Bloomfield, West Hartford. Repo also includes georeferenced zoning maps and GeoJSON files for Avon, Bloomfield, West Hartford, and portions of Farmington, Simsbury, and also includes non-georeferenced zoning maps (JPG/PDF only) for many towns in metro Hartford region, 1950s-60s.
 
-Interactive map displays `combined-zoning-1950s.geojson`, a simplified combined residential zoning map of "the mid-1950s" that merges selected data from three different maps, using a common unit of measurement (minimum land required per family, in square feet). This combined geojson is comprised of:
-
-- `avon-zoning-1953.geojson` to display residential zoning in Avon 1953 (Fall) from the regional map labeled `avon-area-zoning-1954.geojson` (published in January 1954). According to map legend, Avon (east) minimum land per family is 2 acres (about 87,000 sq ft), and Avon (west) is 30,000 sq ft. We chose not to display Farmington 1950 and Simsbury 1952 data from the `avon-area` file because these were partial maps, and the Avon data legend did not clearly define minimum land per family requirements for every residential zoning unit in these towns. Also, we replace the Bloomfield 1950 partial data and West Hartford 1951 partial data from this area map with more complete data from 1958 town maps below.
-- `bloomfield-zoning-1958.geojson` to display residential zoning in Bloomfield 1958. Note that R-40 is coded at 40,000 sq ft of minimum land per family, etc. RB-20 is both residential and business, and coded as 20,000 sq ft in this residential map.
-- `west-hartford-zoning-1958.geojson` to display residential zoning in West Hartford 1958. **TODO** code AAA, etc...
-- For all three geojson files, non-residential zones (industrial and business-only) and non-zoned areas are coded as "na" and are not displayed in this residential zoning interactive map.
-- Note that zoning areas as residential at one point in time does not necessarily mean that homes will be constructed there, and some areas may be rezoned to industrial/business or other uses in the future.
-
-
 ## Live map
 https://ontheline.github.io/otl-zoning-metro-hartford/index-caption.html
 
+See related repo: https://github.com/ontheline/otl-zoning-west-hartford
+
 ## Credits
 Interactive map developed by Jack Dougherty and Ilya Ilyankou / Picturedigits for On The Line, http://OnTheLine.trincoll.edu, Trinity College, Hartford CT.
-
-See also https://ontheline.github.io/otl-zoning-west-hartford/index-caption.html
 
 ## Dependencies
 - Leaflet https://leafletjs.com
@@ -25,16 +16,16 @@ See also https://ontheline.github.io/otl-zoning-west-hartford/index-caption.html
 - FontAwesome https://fontawesome.com
 - Leaflet.ExtraMarkers https://github.com/coryasilva/Leaflet.ExtraMarkers
 
+## Map design
+Interactive map displays `combined-zoning-1950s.geojson`, a simplified combined residential zoning map of "the mid-1950s" that merges selected data from three different maps, using a common unit of measurement (minimum land required per family, in square feet). This combined geojson is comprised of:
 
-## TODO
-- finalize color scheme that also works well with 1924 WH map and diagram
-- design new legend to match data
-- decide if Town Boundaries (including Hartford and others) should appear on this map
-- decide if Star should appear for State Capitol
-- decide if FA and Extramarkers can be removed from this map, since replaced by onEachFeature
-- do calculations of amount and percentage of land allocated to residential type by town
-- decide if calculations should manually remove park area (such as Pennfield state park in Bloomfield) or keep as-is on zone map
+- `avon-zoning-1953.geojson` to display residential zoning in Avon 1953 (Fall) from the regional map labeled `avon-area-zoning-1954.geojson` (published in January 1954). According to map legend, Avon (east) minimum land per family is 2 acres (about 87,000 sq ft), and Avon (west) is 30,000 sq ft. We chose not to display Farmington 1950 and Simsbury 1952 data from the `avon-area` file because these were partial maps, and the Avon data legend did not clearly define minimum land per family requirements for every residential zoning unit in these towns. Also, we replace the Bloomfield 1950 partial data and West Hartford 1951 partial data from this area map with more complete data from 1958 town maps below.
+- `bloomfield-zoning-1958.geojson` to display residential zoning in Bloomfield 1958. Note that R-40 is coded at 40,000 sq ft of minimum land per family, etc. RB-20 is both residential and business, and coded as 20,000 sq ft in this residential map.
+- `west-hartford-zoning-1958.geojson` to display residential zoning in West Hartford 1958. Note that AAA is coded as R-18, etc.
+- For all three geojson files, non-residential zones (industrial and business-only) and non-zoned areas are coded as "na" and are not displayed in this residential zoning interactive map.
+- Note that zoning areas as residential at one point in time does not necessarily mean that homes will be constructed there, and some areas may be rezoned to industrial/business or other uses in the future.
 
+Legend created with https://www.figma.com/file/7JitgyYxiT3xR3fyoZttKb/otl-zoning-graphics
 
 ## Map Summary
 * Avon 1951 (JPG only)
@@ -81,6 +72,8 @@ See additional West Hartford zoning maps in https://github.com/ontheline/otl-zon
 
 - Hartford, “Zoning Map of the City of Hartford [Connecticut]” (City of Hartford. Department of Engineering, June 1, 1962), http://www.worldcat.org/oclc/435838873, scanned by University of Kansas map library.
 
+- Newington, “Zone Map: Town of Newington Connecticut” (Town of Newington, 1957), http://www.worldcat.org/oclc/61219552, scanned by Penn State University map library.
+
 - Newington, “Zone Map: Town of Newington, Connecticut” (Zoning Commission, June 21, 1962), http://www.worldcat.org/oclc/435841790, scanned by University of Kansas map library.
 
 - Simsbury, “Simsbury [Zoning Map] Connecticut,” October 30, 1958, http://www.worldcat.org/oclc/435835109, scanned by University of Kansas map library.
@@ -89,27 +82,59 @@ See additional West Hartford zoning maps in https://github.com/ontheline/otl-zon
 
 - Windsor, “Zoning Map: Town of Windsor, Connecticut” (Dr. Joseph R. Moschner & Associates, November 8, 1961), http://www.worldcat.org/oclc/190825516, scanned by University of Kansas map library.
 
-### Requested from Penn State map library
-Newington, “Zone Map: Town of Newington Connecticut” (Town of Newington, 1957), http://www.worldcat.org/oclc/61219552.
+## Minimum Land Required Per Family by Town Zoning, mid-1950s
 
+| Town  | Zone | Square Ft |
+|:------|-----:|----------:|
+| Avon | East | 87,120 |
+| Avon | West | 30,000 |
+| Bloomfield | R 40 | 40,000 |
+| Bloomfield | R 30 | 30,000 |
+| Bloomfield | R 20 | 20,000 |
+| Bloomfield | R 15 | 15,000 |
+| Bloomfield | R 10 | 10,000 |
+| West Hartford | AAA | 18,000 |
+| West Hartford | AA | 10,500 |
+| West Hartford | A | 9,000 |
+| West Hartford | B | 6,000 |
+| West Hartford | C | 3,000 |
+| West Hartford | D | 1,000 |
+| West Hartford | G | 3,000 |
 
-## Minimum Land Required Per Family by Town Zoning in early 1950s
+## Largest Requirements for Minimum Land Per Family and Home Size in Each Town
 
-| Town (section)         | Square Ft | Acres |
-|:-----------------------|----------:|------:|
-| Avon (east)            | 87,000    | 2.0   |
-| Avon (west)            | 30,000    | 0.7   |
-| Farmington (northeast) | 40,000    | 0.9   |
-| Farmington (west)      | 20,000    | 0.5   |
-| Bloomfield (west)      | 30,000    | 0.7   |
-| Simsbury               | 25,000    | 0.6   |
-| West Hartford (west)   | 10,000    | 0.2   |
-| Burlington             | not zoned | n/a   |
-| Canton                 | not zoned | n/a   |
+| Town  | Year | Zone | Min Land Per Family (Sq Ft) | Min Land Width (Ft) | Min Floor Area for Home (Sq Ft) |
+|:------|-----:|-----:|----------:|----:|-----:|
+| Avon  | 1953 | East | 87,000    | 200 | na  |
+| Blmfd | 1958 | R-40 | 40,000    | 150 | ??? |
+| WeHa  | 1958 | AAA  | 18,000    | 100 | 1,715 |
 
-Sources: Zoning Regulations for Avon (amended Oct 19, 1951, and Fall 1953); Bloomfield (adopted March 15, 1950); Simsbury (adopted Nov 21, 1952); West Hartford (amended to Dec 3, 1951); Farmington (adopted April 27, 1950), adapted from Avon and Joseph Moschner, “Present Zoning Fact Sheet [Map]” (Avon Town Planning Committee, Connecticut, January 1954), https://www.avonct.gov/planning-community-development/files/1956-pocd-maps-908.
+Sources: Avon Zoning Regulations (amended Oct 19, 1951, and Fall 1953); Bloomfield (adopted March 15, 1950); West Hartford (amended to Dec 3, 1951); adapted from Avon “Present Zoning Fact Sheet [Map]” (Avon Town Planning Committee and Joseph Moschner, Connecticut, January 1954), https://www.avonct.gov/planning-community-development/files/1956-pocd-maps-908; see also Bloomfield 1958 and West Hartford 1958 zoning map legends. Assume 1958 Bloomfield R-40 minimum lot width of 150 ft based on present-day requirements.
 
-## Georeferencing (Avon 1954)
+### What percentage of its total land area did each town zone by type in mid-1950s?
+
+Percentage of Land Area by Zone Type and Town, mid-1950s
+
+| Zone equivalent | Avon | Bloomfield | West Hartford |
+|-|-|-|-|
+| R-87 | 26% |  |  |
+| R-40 |  | 32% |  |
+| R-30 | 72% | 27% |  |
+| R-20 |  | 14% |  |
+| R-18 |  |  | 31% |
+| R-15 |  | 10% |  |
+| R-10.5 |  |  | 19% |
+| R-10 |  | 5% |  |
+| R-9 |  |  | 24% |
+| R-6 |  |  | 11% |
+| R-3 |  |  | 6% |
+| R-1 |  |  | 2% |
+| non-residential | 2% | 12% | 7% |
+| Total acres | 14979 | 16943 | 14333 |
+
+Note that a strict calculation might manually remove park areas (such as Pennfield state park in Bloomfield) from residential zone calculations, but towns did include them in zoning maps, so left as-is.
+
+## Georeferencing
 Export PDF to JPG or PNG, and georeference the image using [QGIS Georeferencer](https://docs.qgis.org/3.16/en/docs/user_manual/working_with_raster/georeferencer.html) tool.
 
 For Avon 1954, about 20 ground control points were chosen (available in `georeference/1954-avon-present-zoning-ROTATED_modified.tif.points`). The output GeoTIFF is available from `georeference/1954-avon-present-zoning-ROTATED_modified.tif`.
